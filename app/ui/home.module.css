@@ -1,0 +1,18 @@
+.shape {
+    height: 0;
+    width: 0;
+    border-top: 30px solid red; /* Changed border-bottom to border-top */
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    margin-bottom: 10px;
+    animation: moveUpDown 2s infinite; /* Adding animation */
+  }
+    
+    @keyframes moveUpDown {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px); 
+      }
+    }
